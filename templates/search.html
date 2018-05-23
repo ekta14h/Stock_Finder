@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+        <head></head>
+        <body>
+            <style>
+            table {
+                font-family: arial, sans-serif;
+                border-collapse: collapse;
+                width: 100%;
+            }
+
+            td, th {
+                border: 1px solid #dddddd;
+                text-align: left;
+                padding: 8px;
+            }
+
+            tr:nth-child(even) {
+                background-color: #dddddd;
+            }
+
+            input {
+                margin:100px right;
+                width:300px;
+                height: 30px;
+                margin-left: 370px;
+                text-indent: 'middle';
+                background-color: #dddddd;
+            }
+
+            button {
+                height: 30px;
+                width:100px;
+            }
+
+            </style>
+                
+                    <table align="center" style="width:80%">
+                        <tr>
+                            <th>Name</th>
+                            <th>Code</th>
+                            <th>Open</th>
+                            <th>High</th>
+                            <th>Low</th>
+                            <th>Close</th>
+                        </tr>
+                        
+                            <tr>
+                                <td>{{names[0]}}</td>
+                                <td>{{names[1]}}</td>
+                                <td>{{names[2]}}</td>
+                                <td>{{names[3]}}</td>
+                                <td>{{names[4]}}</td>
+                                <td>{{names[5]}}</td>
+                            </tr>
+                            
+                    </table>
+                    
+            <br>
+            <br>
+
+            <form method="get" action="get_data">
+              <input type="text" align="center" value="" name="company_name" />
+              <button type="submit" align="center">Search</button>
+            </form>
+        </body>
+</html>
